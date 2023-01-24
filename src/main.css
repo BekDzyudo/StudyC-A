@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Montserrat/static/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Montserrat/static/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Montserrat/static/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Montserrat/static/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Montserrat/static/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+body {
+  font-family: "Montserrat";
+}
+.card-comand {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.card-comand::-webkit-scrollbar {
+  height: 5px;
+}
+.card-comand::-webkit-scrollbar-thumb {
+  background-color: #dbad39;
+  border-radius: 10px;
+}
+.card-comand::-webkit-scrollbar-track {
+  background-color: gray;
+  border-radius: 10px;
+}
+.contact {
+  background-image: url(../image/Component\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar .logo {
+  display: none;
+}
+.navbar .menu {
+  display: none;
+}
+.link2 {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .link2 {
+    display: flex;
+  }
+  .abs {
+    display: none;
+  }
+  .header .navbar .logo {
+    display: block;
+  }
+  .header .navbar .menu {
+    display: block;
+  }
+  header .navbar {
+    margin-bottom: 0px;
+  }
+  .header .link2 {
+    margin-bottom: 50px;
+  }
+  .header .navbar .nav_list {
+    display: none;
+  }
+  .header .navbar .link {
+    display: none;
+  }
+  .header .header_content {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .kompany .row {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .kompany .row .kompany_img {
+    order: 1;
+  }
+  .kompany .row .kompany_title {
+    order: 2;
+  }
+  .kompany .row .kompany_title p {
+    padding: 20px;
+  }
+
+  .pol .row {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .pol .row img {
+    width: 80%;
+  }
+
+  .usluga .row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .comand .row {
+    flex-direction: column;
+    gap: 90px;
+  }
+  .partnyor .row .one {
+    display: none;
+  }
+  .partnyor .row .three {
+    display: none;
+  }
+  .information .row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .information .row .card {
+    max-width: 100%;
+  }
+  .information .row .card p {
+    margin-bottom: 20px;
+  }
+  .chast .row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .chast .row .form_card {
+    max-width: 100%;
+  }
+  .chast .row .chast_img {
+    max-width: 100%;
+  }
+  .client .row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .client .row .card_img {
+    width: 50%;
+  }
+  .client .row .card_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .client .row .card_title p {
+    padding: 20px;
+  }
+  .contact {
+    background-image: none;
+    background-color: #dbad39;
+  }
+  .contact h1 {
+    display: none;
+  }
+  .contact .card {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+  }
+  .contact .card form {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container {
+    padding: 20px;
+  }
+  .header h2 {
+    font-size: 24px;
+    line-height: 23px;
+  }
+  .header h1 {
+    font-size: 26px;
+    line-height: 25px;
+  }
+  .header p {
+    font-size: 14px;
+    line-height: 13px;
+  }
+  .header span {
+    font-size: 14px;
+    line-height: 13px;
+  }
+  .information h1 {
+    font-size: 26px;
+    line-height: 25px;
+  }
+  .information .row .card h2 {
+    font-size: 26px;
+    line-height: 25px;
+  }
+  .chast h1 {
+    font-size: 26px;
+    line-height: 25px;
+  }
+}
